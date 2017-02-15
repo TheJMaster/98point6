@@ -13,6 +13,6 @@ Completed: *Winter Quarter 2017*
 6. java DropToken
 7. Play the game!
 
-## Notes 
+## Notes/Implementation Decisions
 - I had to make an assumption in my implementation that in an interview or production setting, I would have asked for further clarification on. I wasn't sure how to handle the PUT command being called after the game has already been won. My intuiton told me it would be silly to allow this to happen, so I simply print "ERROR" each time this occurs. My apalogies if this assumption was incorrect. To reverse my assumption, you would need to remove the "hasWon" variable and it's corresponding code, thus allowing the user to PUT after the game has already been won.
 - If you wish to run the DropToken_Tests.java, make sure to change the private methods in DropToken to be public. I kept them private in my version, since in a production setting, we wouldn't want any class beyond DropToken to have access to these.
